@@ -1,0 +1,21 @@
+version: 0.0
+os: linux
+files:
+  - source: ./
+    destination: /home/ubuntu/bad-api
+hooks:
+  ApplicationStop:
+    - location: deploy/stop.sh
+      timeout: 20
+      runas: ubuntu
+  ApplicationStart:
+    - location: deploy/start.sh
+      runas: ubuntu
+  ValidateService:
+    - location: deploy/validate.sh
+      timeout: 100
+      runas: ubuntu
+  BeforeInstall:
+    - location: deploy/before-install.sh
+      timeout: 20
+      runas: ubuntu

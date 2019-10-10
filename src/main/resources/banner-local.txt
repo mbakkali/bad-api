@@ -1,0 +1,16 @@
+
+
+  ___   _   ___            _   ___ ___         _    ___   ___   _   _    
+ | _ ) /_\ |   \   ___    /_\ | _ \_ _|  ___  | |  / _ \ / __| /_\ | |   
+ | _ \/ _ \| |) | |___|  / _ \|  _/| |  |___| | |_| (_) | (__ / _ \| |__ 
+ |___/_/ \_\___/        /_/ \_\_| |___|       |____\___/ \___/_/ \_\____|
+                                                                         
+
+
+Security : Root user is : {username : root, password : root}
+Swagger : http://localhost:8081/bad-api/swagger-ui.html
+Database H2 console : http://localhost:8081/bad-api/h2/console
+Actuator : http://localhost:8081/bad-api/actuator
+
+
+************************************
