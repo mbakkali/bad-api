@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 while [ true ]
 do
-    if [ "$(curl -s -k  http://localhost:8080/bad-api/actuator/health)" = '{"status":"UP"}' ]
+    if [ "$(curl -s -k  http://localhost:8081/bad-api/actuator/health)" = '{"status":"UP"}' ]
     then
         echo "VALIDATE - Server is up and running ! "
         exit 0
